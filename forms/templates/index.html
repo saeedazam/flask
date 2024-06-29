@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    Enter your IP address.
+{% endblock %}
+
+{% block body %}
+    <form action="{{ url_for('hello') }}", method="post">
+        <input type="text" name="name" placeholder="IP address">
+        <button>Submit</button>
+    </form>
+{% endblock %}
